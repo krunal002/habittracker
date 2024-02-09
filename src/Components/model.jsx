@@ -68,9 +68,7 @@ export default function BasicModal() {
                 dispatch({ type: "repeat", payload: e.target.value })
               }
             >
-              <MenuItem value="Daily">
-                <em>Daily</em>
-              </MenuItem>
+              <MenuItem value="Daily">Daily</MenuItem>
               <MenuItem value={"Weekly"}>Weekly</MenuItem>
               <MenuItem value={"Monthly"}>Monthly</MenuItem>
               <MenuItem value={"Yearly"}>Yearly</MenuItem>

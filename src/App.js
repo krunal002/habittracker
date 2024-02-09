@@ -1,12 +1,16 @@
-import './App.css';
-import BasicModal from './Components/model';
-// import ImgMediaCard from './Components/smaple';
+import "./App.css";
+import { useContext } from "react";
+import { HabitContext } from "./Context/habitContext";
+import BasicModal from "./Components/model";
+import HabitList from "./Components/habitList";
+
 
 function App() {
+  const { state } = useContext(HabitContext);
   return (
     <div className="App">
-      {/* <ImgMediaCard/> */}
-      <BasicModal/>
+      <BasicModal />
+      <HabitList data={state.habitsData} />
     </div>
   );
 }

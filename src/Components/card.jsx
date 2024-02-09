@@ -6,7 +6,7 @@ import CardMedia from "@mui/material/CardMedia";
 import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
 
-export default function ImgMediaCard() {
+export default function ImgMediaCard({ data }) {
   return (
     <Card sx={{ maxWidth: 345, m: " 10% 40%" }}>
       <CardMedia
@@ -17,11 +17,10 @@ export default function ImgMediaCard() {
       />
       <CardContent>
         <Typography gutterBottom variant="h5" component="div">
-          Fighter
+          {data.title}
         </Typography>
         <Typography variant="body2" color="text.secondary">
-          Director Siddharth Anand's big-budget action film Fighter continued
-          its descent after registering its lowest single-day haul yet
+          {data.goal}
         </Typography>
       </CardContent>
       <CardActions>
