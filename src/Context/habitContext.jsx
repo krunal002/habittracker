@@ -4,36 +4,40 @@ export const HabitContext = createContext();
 export const HabitContextHandler = ({ children }) => {
   const defaultHabits = [
     {
-      id: 1707483757570,
-      title: "Reading",
+      id: 1707488926015,
+      title: "Gym",
       repeat: "Weekly",
-      goal: "2 Times",
-      timeOfDay: "Morning",
-      startDate: "2024-02-21",
+      goal: "3 Times",
+      timeOfDay: "Evening",
+      startDate: "2024-02-04",
+      timeTag: "2024-02-09T14:28:46.015Z",
     },
     {
-      id: 1707483757571,
+      id: 1707488857415,
       title: "Meditation",
       repeat: "Daily",
-      goal: "2 Times",
+      goal: "1 Time",
       timeOfDay: "Morning",
-      startDate: "2024-02-21",
+      startDate: "2024-02-05",
+      timeTag: "2024-02-09T14:27:37.415Z",
     },
     {
-      id: 1707483757572,
-      title: "Swimming",
-      repeat: "Monthly",
-      goal: "3 Times",
-      timeOfDay: "Morning",
-      startDate: "2024-02-21",
-    },
-    {
-      id: 1707483757573,
-      title: "Exercise",
+      id: 1707488829417,
+      title: "Drink Water",
       repeat: "Daily",
-      goal: "1 Times",
-      timeOfDay: "Morning",
-      startDate: "2024-02-21",
+      goal: "4 Times",
+      timeOfDay: "Afternoon",
+      startDate: "2024-02-03",
+      timeTag: "2024-02-09T14:27:09.417Z",
+    },
+    {
+      id: 1707488796050,
+      title: "Running",
+      repeat: "Daily",
+      goal: "1 Time",
+      timeOfDay: "Evening",
+      startDate: "2024-02-01",
+      timeTag: "2024-02-09T14:26:36.050Z",
     },
   ];
 
@@ -77,6 +81,7 @@ export const HabitContextHandler = ({ children }) => {
       goal: state.goal,
       timeOfDay: state.timeOfDay,
       startDate: state.startDate,
+      timeTag: new Date(),
     };
     dispatch({ type: "submitHabit", payload: newHabit });
     setTimeout(() => console.log(state), 1000);

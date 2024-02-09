@@ -8,12 +8,12 @@ import Typography from "@mui/material/Typography";
 
 export default function ImgMediaCard({ data }) {
   return (
-    <Card sx={{ maxWidth: 345, m: " 10% 40%" }}>
+    <Card sx={{ maxWidth: 450, m: " 10% 40%" }}>
       <CardMedia
         component="img"
         alt="green iguana"
-        height="200"
-        image="https://img-s-msn-com.akamaized.net/tenant/amp/entityid/BB1hsEti.img?w=768&h=432&m=6&x=131&y=225&s=807&d=330"
+        height="150"
+        image="https://img-s-msn-com.akamaized.net/tenant/amp/entityid/AA1fieoa.img?w=800&h=435&q=60&m=2&f=jpg"
       />
       <CardContent>
         <Typography gutterBottom variant="h5" component="div">
@@ -24,8 +24,8 @@ export default function ImgMediaCard({ data }) {
         </Typography>
       </CardContent>
       <CardActions>
-        <Button size="small">Share</Button>
-        <Button size="small">Learn More</Button>
+        <Button size="small" variant="outlined" color="error">Delete</Button>
+        <Button size="small" variant="outlined" color="info">Edit</Button>
       </CardActions>
     </Card>
   );
