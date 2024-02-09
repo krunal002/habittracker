@@ -1,11 +1,11 @@
 import './App.css';
 import BasicModal from './Components/model';
-import ImgMediaCard from './Components/smaple';
+// import ImgMediaCard from './Components/smaple';
 
 function App() {
   return (
     <div className="App">
-      <ImgMediaCard/>
+      {/* <ImgMediaCard/> */}
       <BasicModal/>
     </div>
   );
